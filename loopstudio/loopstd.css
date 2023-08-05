@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+    --alata-font: 'Alata', sans-serif;
+    --josefin-font: 'Josefin Sans', sans-serif;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* header code */
+.header-wrp {
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("image-hero.jpg ");
+}
+
+header {
+    display: flex;
+    margin: 1rem 8rem;
+    justify-content: space-between;
+}
+
+#svg-s {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.li-font {
+    font-family: var(--alata-font);
+    text-decoration: none;
+    padding-left: 2rem;
+    font-size: 1.1rem;
+}
+
+.title-home {
+    font-family: var(--josefin-font);
+    border: 2px solid white;
+    width: 50%;
+    margin: 6rem 8rem;
+    padding: 2rem 3rem;
+}
+
+.main-h {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+}
+
+/* about section code */
+.about {
+    position: relative;
+    margin: 8rem;
+}
+
+
+.text {
+    padding: 4rem 5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 55%;
+    background-color: white;
+}
+
+.second-title {
+    letter-spacing: 4px;
+}
+
+.desc-s {
+    margin-top: 1rem;
+    line-height: 30px;
+    color: hsl(0, 0%, 55%);
+    font-family: var(--alata-font);
+    font-size: 16px;
+}
+
+.desc-s::first-letter {
+    text-transform: capitalize;
+}
+
+.our-creations {
+    padding: 6rem 8rem;
+}
+
+.creations-lab {
+    padding: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+
+}
+
+.tite-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cre-s {
+    position: relative;
+    width: min-content;
+    margin: 1rem 0;
+    background-size: cover;
+}
+
+.see-all {
+    border: 1px solid black;
+    font-family: var(--alata-font);
+    padding: 10px 32px;
+    color: black;
+    letter-spacing: 3px;
+}
+
+.cre-t {
+    position: absolute;
+    padding-left: 2rem;
+    bottom: 35px;
+    font-weight: 300;
+    font-size: 2rem;
+    width: 50%;
+    letter-spacing: 4px;
+    opacity: 0.8;
+    color: hsl(0, 0%, 100%);
+}
+
+.mobile-img,
+.see-mobile-cen {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 2rem 8rem;
+}
+
+.al-2 {
+    margin: 2rem 0 0;
+}
+
+.ft-l {
+    font-family: var(--alata-font);
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+    margin-bottom: 2rem;
+    column-gap: 10px;
+    justify-content: flex-end;
+}
+
+.rights-l {
+    color: hsl(0, 0%, 41%);
+    font-family: var(--alata-font);
+}
+
+@media screen and (max-width:767px) {
+    .header-wrp {
+        padding: 2rem 0 7rem;
+        background-image: url("imagem-herom.jpg ");
+    }
+
+    header {
+        margin: 1rem;
+    }
+
+    .close-nav svg {
+        display: block;
+    }
+
+    .title-home {
+        width: 93%;
+        margin: 3rem 1rem;
+        padding: 2rem;
+    }
+
+    .main-h {
+        font-size: 1.6rem;
+        line-height: 40px;
+    }
+
+    .about {
+        position: relative;
+        margin: 5rem 1rem;
+    }
+
+    .text {
+        padding: 1rem;
+        text-align: center;
+        position: initial;
+        width: 100%;
+        background-color: white;
+    }
+
+    .our-creations {
+        padding: 1rem;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .hide-link {
+        display: none;
+    }
+
+    .cre-t {
+        font-size: 1.5rem;
+    }
+
+    .cre-s {
+        width: 100%;
+    }
+
+    .mobile-img {
+        width: 100%;
+    }
+
+    .li-font {
+        padding: 3rem 0;
+        font-size: 3rem;
+    }
+
+    .menu {
+        align-self: center;
+        position: relative;
+        display: block;
+        width: 35px;
+        height: 3px;
+        background-color: white;
+    }
+
+    .menu::before {
+        content: "";
+        top: -10px;
+        position: absolute;
+        width: 35px;
+        height: 3px;
+        background-color: white;
+    }
+
+    .menu::after {
+        content: "";
+        top: 10px;
+        position: absolute;
+        width: 35px;
+        height: 3px;
+        background-color: white;
+    }
+
+    #svg-s {
+        align-self: center;
+        display: block;
+    }
+
+    .al-u {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-2 {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        padding: 4rem 1rem;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: hsla(0, 0%, 0%, 0.811);
+    }
+
+    footer {
+        padding: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-media {
+        margin: 1rem 0;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .mobile-img,
+    .see-mobile-cen {
+        display: block;
+    }
+
+}
